@@ -25,14 +25,15 @@ public class UnitData : MonoBehaviour
     public double maxSpeed = 10;
 
     [Header("Team Settings")]
-    public int ownerPlayer = 0;
-    public int team = 0; //player can me in teams or alliances, no shooting your own teammates
+    public int ownerPlayer = 0; // player id
+    public int team = 0; //player can be in teams or alliances, no shooting your own teammates, 0 = no team
 
-    [Header("Attack Settings")]
+    [Header("Attack Settings")] // this numbers are for one attack
     public double range = 0; // 0 for melee /// TO DO, ADD TO RANGE THE SIZE OF THE UNIT
     public double baseDamage = 0; // 
     public double healthDamage = 0; // bonus damage to hp, auto updated
     public double shieldDamage = 0; // bonus damage to shields, auto updated
+    public bool shieldBypass = false; // if ignores shields, auto updated
     public AttackType attack = AttackType.None; // autoupdates stats
     void Start()
     {
@@ -62,7 +63,9 @@ public class UnitData : MonoBehaviour
                 baseDamage += (healthDamage + shieldDamage);
                 healthDamage = 0;
                 shieldDamage = 0;
-
+                break;
+            case AttackType.Suicide: // bypass shield
+                shieldBypass = true;
                 break;
 
         }
@@ -79,6 +82,7 @@ public class UnitData : MonoBehaviour
     private void OnEnable()
     {
         // registers to the UnitSelection script
+
         if (!UnitSelection.Instance.unitList.Contains(gameObject))
             { UnitSelection.Instance.unitList.Add(gameObject); }
 
@@ -105,8 +109,8 @@ public class UnitData : MonoBehaviour
                 maxShield = 0;
                 attack = AttackType.None;
                 break;
-            case EntityType.Rocket: // no range, rocketAttack type
-                attack = AttackType.Rocket;
+            case EntityType.Rocket: // explodes on contact, so suicide
+                attack = AttackType.Suicide;
                 range = 0;
                 break;
         }
@@ -122,6 +126,7 @@ public enum AttackType
     Rocket, // can be dodged, bypasses shield, devastating to hp
     Laser, // bonus damage to hull
     Bullet, // bonus damage to shields
+    Suicide, // explodes when near an enemy
     //Spawn, 
     //Suicide,
     //Grenade, // area effect

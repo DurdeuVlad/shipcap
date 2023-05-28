@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -123,163 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &332382163
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 332382170}
-  - component: {fileID: 332382169}
-  - component: {fileID: 332382168}
-  - component: {fileID: 332382167}
-  - component: {fileID: 332382166}
-  - component: {fileID: 332382165}
-  - component: {fileID: 332382164}
-  m_Layer: 6
-  m_Name: Unit1 (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &332382164
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 332382163}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cda1fbe7db9d0b04594890ad096287d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &332382165
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 332382163}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e456a5b8dec840468110f7bf0b4092c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  move:
-    destinations: []
---- !u!114 &332382166
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 332382163}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acea8097fa9f4e841a6d7690efc11e03, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  unitName: Basic Unit
-  unitDescription: Basic Description
-  faction: 0
-  type: 0
-  isSelected: 0
-  health: 100
-  maxHealth: 100
-  shield: 0
-  regenShield: 5
-  maxShield: 0
-  isMoving: 0
-  maxSpeed: 0
-  ownerPlayer: 1
-  team: 1
-  range: 0
-  baseDamage: 0
-  healthDamage: 0
-  shieldDamage: 0
-  attack: 0
---- !u!65 &332382167
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 332382163}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &332382168
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 332382163}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &332382169
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 332382163}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &332382170
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 332382163}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.7799997, y: 0, z: 8.99}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 11
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &553151744
 GameObject:
   m_ObjectHideFlags: 0
@@ -356,163 +199,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 553151744}
   m_CullTransparentMesh: 1
---- !u!1 &553327417
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 553327424}
-  - component: {fileID: 553327423}
-  - component: {fileID: 553327422}
-  - component: {fileID: 553327421}
-  - component: {fileID: 553327420}
-  - component: {fileID: 553327419}
-  - component: {fileID: 553327418}
-  m_Layer: 6
-  m_Name: Unit (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &553327418
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 553327417}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cda1fbe7db9d0b04594890ad096287d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &553327419
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 553327417}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e456a5b8dec840468110f7bf0b4092c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  move:
-    destinations: []
---- !u!114 &553327420
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 553327417}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acea8097fa9f4e841a6d7690efc11e03, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  unitName: Basic Unit
-  unitDescription: Basic Description
-  faction: 0
-  type: 0
-  isSelected: 0
-  health: 100
-  maxHealth: 100
-  shield: 0
-  regenShield: 5
-  maxShield: 0
-  isMoving: 0
-  maxSpeed: 0
-  ownerPlayer: 1
-  team: 1
-  range: 0
-  baseDamage: 0
-  healthDamage: 0
-  shieldDamage: 0
-  attack: 0
---- !u!65 &553327421
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 553327417}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &553327422
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 553327417}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &553327423
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 553327417}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &553327424
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 553327417}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.52, y: 0, z: 8.99}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &613375808
 GameObject:
   m_ObjectHideFlags: 0
@@ -723,7 +409,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47746ad9fca3cae449a6e3bc00a5a92a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  panSpeed: 20
+  panSpeed: 0
   panBorderThickness: 10
   movUp: w
   movDown: s
@@ -803,13 +489,14 @@ MonoBehaviour:
   regenShield: 5
   maxShield: 0
   isMoving: 0
-  maxSpeed: 0
+  maxSpeed: 13.02
   ownerPlayer: 1
   team: 1
   range: 0
   baseDamage: 0
   healthDamage: 0
   shieldDamage: 0
+  shieldBypass: 0
   attack: 0
 --- !u!65 &788850419
 BoxCollider:
@@ -887,7 +574,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &834891269
 GameObject:
@@ -960,13 +647,14 @@ MonoBehaviour:
   regenShield: 5
   maxShield: 0
   isMoving: 0
-  maxSpeed: 0
+  maxSpeed: 13.02
   ownerPlayer: 1
   team: 1
   range: 0
   baseDamage: 0
   healthDamage: 0
   shieldDamage: 0
+  shieldBypass: 0
   attack: 0
 --- !u!65 &834891273
 BoxCollider:
@@ -1044,7 +732,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &855143440
 GameObject:
@@ -1117,13 +805,14 @@ MonoBehaviour:
   regenShield: 5
   maxShield: 0
   isMoving: 0
-  maxSpeed: 0
+  maxSpeed: 13.02
   ownerPlayer: 1
   team: 1
   range: 0
   baseDamage: 0
   healthDamage: 0
   shieldDamage: 0
+  shieldBypass: 0
   attack: 0
 --- !u!65 &855143444
 BoxCollider:
@@ -1201,7 +890,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &919898804
 GameObject:
@@ -1319,13 +1008,14 @@ MonoBehaviour:
   regenShield: 5
   maxShield: 0
   isMoving: 0
-  maxSpeed: 0
+  maxSpeed: 13.02
   ownerPlayer: 1
   team: 1
   range: 0
   baseDamage: 0
   healthDamage: 0
   shieldDamage: 0
+  shieldBypass: 0
   attack: 0
 --- !u!65 &957060560
 BoxCollider:
@@ -1403,7 +1093,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &960132640
 GameObject:
@@ -1476,13 +1166,14 @@ MonoBehaviour:
   regenShield: 5
   maxShield: 0
   isMoving: 0
-  maxSpeed: 0
+  maxSpeed: 13.02
   ownerPlayer: 1
   team: 1
   range: 0
   baseDamage: 0
   healthDamage: 0
   shieldDamage: 0
+  shieldBypass: 0
   attack: 0
 --- !u!65 &960132644
 BoxCollider:
@@ -1560,7 +1251,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &987900047
 GameObject:
@@ -1781,13 +1472,14 @@ MonoBehaviour:
   regenShield: 5
   maxShield: 0
   isMoving: 0
-  maxSpeed: 0
+  maxSpeed: 13.02
   ownerPlayer: 1
   team: 1
   range: 0
   baseDamage: 0
   healthDamage: 0
   shieldDamage: 0
+  shieldBypass: 0
   attack: 0
 --- !u!65 &1146433592
 BoxCollider:
@@ -1865,7 +1557,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1172639321
 GameObject:
@@ -1938,13 +1630,14 @@ MonoBehaviour:
   regenShield: 5
   maxShield: 0
   isMoving: 0
-  maxSpeed: 0
+  maxSpeed: 13.02
   ownerPlayer: 1
   team: 1
   range: 0
   baseDamage: 0
   healthDamage: 0
   shieldDamage: 0
+  shieldBypass: 0
   attack: 0
 --- !u!65 &1172639325
 BoxCollider:
@@ -2022,7 +1715,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1209257443
 GameObject:
@@ -2095,13 +1788,14 @@ MonoBehaviour:
   regenShield: 5
   maxShield: 0
   isMoving: 0
-  maxSpeed: 0
+  maxSpeed: 13.02
   ownerPlayer: 1
   team: 1
   range: 0
   baseDamage: 0
   healthDamage: 0
   shieldDamage: 0
+  shieldBypass: 0
   attack: 0
 --- !u!65 &1209257447
 BoxCollider:
@@ -2179,7 +1873,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1236967464
 GameObject:
@@ -2346,13 +2040,14 @@ MonoBehaviour:
   regenShield: 5
   maxShield: 0
   isMoving: 0
-  maxSpeed: 0
+  maxSpeed: 13.02
   ownerPlayer: 1
   team: 1
   range: 0
   baseDamage: 0
   healthDamage: 0
   shieldDamage: 0
+  shieldBypass: 0
   attack: 0
 --- !u!65 &1409497096
 BoxCollider:
@@ -2430,7 +2125,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1450029206
 GameObject:
@@ -2539,13 +2234,14 @@ MonoBehaviour:
   regenShield: 5
   maxShield: 0
   isMoving: 0
-  maxSpeed: 0
+  maxSpeed: 13.02
   ownerPlayer: 1
   team: 1
   range: 0
   baseDamage: 0
   healthDamage: 0
   shieldDamage: 0
+  shieldBypass: 0
   attack: 0
 --- !u!65 &1628320198
 BoxCollider:
@@ -2696,13 +2392,14 @@ MonoBehaviour:
   regenShield: 5
   maxShield: 0
   isMoving: 0
-  maxSpeed: 0
+  maxSpeed: 13.02
   ownerPlayer: 1
   team: 1
   range: 0
   baseDamage: 0
   healthDamage: 0
   shieldDamage: 0
+  shieldBypass: 0
   attack: 0
 --- !u!65 &1653219750
 BoxCollider:
@@ -2780,7 +2477,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1755684139
 GameObject:
@@ -2905,6 +2602,7 @@ MonoBehaviour:
   baseDamage: 0
   healthDamage: 0
   shieldDamage: 0
+  shieldBypass: 0
   attack: 0
 --- !u!65 &1772705058
 BoxCollider:
@@ -3126,6 +2824,7 @@ MonoBehaviour:
   baseDamage: 0
   healthDamage: 0
   shieldDamage: 0
+  shieldBypass: 0
   attack: 0
 --- !u!114 &2012234869
 MonoBehaviour:
@@ -3370,13 +3069,14 @@ MonoBehaviour:
   regenShield: 5
   maxShield: 0
   isMoving: 0
-  maxSpeed: 0
+  maxSpeed: 13.02
   ownerPlayer: 1
   team: 1
   range: 0
   baseDamage: 0
   healthDamage: 0
   shieldDamage: 0
+  shieldBypass: 0
   attack: 0
 --- !u!65 &2140860299
 BoxCollider:

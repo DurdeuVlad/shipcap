@@ -22,6 +22,12 @@ public class UnitSelection : MonoBehaviour
             _instance = this;
         }
     }
+
+    private void Start()
+    {
+        _instance = this;
+    }
+
     void AddUnit(GameObject unit)
     {
         UnitData unitData;
